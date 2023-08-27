@@ -93,6 +93,12 @@ body{
         justify-content: flex-end;
         padding-left: 32px;
         padding-bottom: 32px;
+        transition: all, 0.1s;
+        box-sizing: border-box;
+        &:hover{
+            border: 3px solid #44D2FF;
+            border-radius: 16px;
+        }
     }
     &_game1{
         background-image: url(img/Game1.png);
@@ -104,4 +110,61 @@ body{
         background-image: url(img/Game3.png);
     }
 
+}
+.seasons-box{
+    background: #000915;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &_content{
+        width: 584px;
+        padding-top: 282px;
+        padding-bottom: 282px;
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        &_title{
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        &_subtitle{
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px; /* 177.778% */
+        }
+        &_button{
+            border-radius: 30px;
+            background: #9C0332;
+            box-sizing: border-box;
+            border: 1px solid #9C0332;
+            outline: none;
+            width: 234.063px;
+            height: 48.603px;
+
+            &_link{
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration: none;
+            }
+            &:hover{
+                background: #EB443F;
+            }
+        }
+    }
+    &_img{
+        padding-top: 233.5px;
+        padding-bottom: 233.5px;
+    }
 }

@@ -16,6 +16,8 @@ body {
   padding-top: 217px;
   height: 735px;
   background-image: url(img/bgrimg.png);
+  background-size: cover;
+  background-position: center;
 }
 .top_title {
   display: flex;
@@ -168,4 +170,96 @@ body {
 .seasons-box_img {
   padding-top: 233.5px;
   padding-bottom: 233.5px;
+}
+.seasons-box_img-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .top {
+    padding-top: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+    background-image: url(img/bgrimg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .top_title {
+    display: flex;
+    width: 343px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .top_title_text {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .top_subtitle {
+    width: 343px;
+    padding-top: 0;
+  }
+  .top_subtitle_text {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+  }
+  .top_subtitle_text_fat {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .top_button {
+    margin-top: 0;
+  }
+  .content-box {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .content-box_game {
+    width: 343px;
+  }
+  .seasons-box {
+    justify-content: center;
+  }
+  .seasons-box_content {
+    padding-top: 51px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+  }
+  .seasons-box_content_title {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .seasons-box_content_subtitle {
+    width: 343px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+  }
+  .seasons-box_img {
+    display: none;
+  }
+  .seasons-box_img-mobile {
+    display: flex;
+    margin-bottom: 85px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -175,6 +175,64 @@ body {
   display: none;
 }
 
+.remember-word {
+  background: #000915;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.remember-word_content {
+  width: 584px;
+  padding-top: 282px;
+  padding-bottom: 282px;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+.remember-word_content_title {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.remember-word_content_subtitle {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 177.778% */
+}
+.remember-word_content_link_button {
+  border-radius: 30px;
+  background: #9C0332;
+  box-sizing: border-box;
+  border: 1px solid #9C0332;
+  outline: none;
+  width: 234.063px;
+  height: 48.603px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+.remember-word_content_link_button:hover {
+  background: #EB443F;
+}
+.remember-word_img {
+  padding-top: 233.5px;
+  padding-bottom: 233.5px;
+}
+.remember-word_img-mobile {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .top {
     padding-top: 238px;
@@ -259,6 +317,40 @@ body {
     display: none;
   }
   .seasons-box_img-mobile {
+    display: flex;
+    margin-bottom: 85px;
+  }
+  .remember-word {
+    justify-content: center;
+  }
+  .remember-word_content {
+    padding-top: 51px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+  }
+  .remember-word_content_title {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .remember-word_content_subtitle {
+    width: 343px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+  }
+  .remember-word_img {
+    display: none;
+  }
+  .remember-word_img-mobile {
     display: flex;
     margin-bottom: 85px;
   }

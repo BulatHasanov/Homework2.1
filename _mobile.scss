@@ -86,5 +86,39 @@
             }
         
     }
-
+    .remember-word{
+        justify-content: center;
+        &_content{
+            padding-top: 51px;
+            padding-bottom: 64px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 33px;
+            &_title{
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+            }
+            &_subtitle{
+                width: 343px;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 22px; /* 157.143% */
+            }
+        }
+        &_img{
+            display: none;
+        }
+        &_img-mobile{
+            display: flex;
+            margin-bottom: 85px;
+            }
+        
+    }
 }

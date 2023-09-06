@@ -121,6 +121,25 @@
             }
         
     }
+    .puzzles{
+        background-image: url(img/bcgrMobile);
+        background-size: cover;
+        background-repeat: no-repeat;
+        &_content{
+            padding-top: 51px;
+            &_title{
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+            }
+        }
+        &_subtitle{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px; /* 157.143% */
+        }
+    }
     .footer{
         border-top:none;
     }

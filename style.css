@@ -432,11 +432,12 @@ body {
     font-style: normal;
     font-weight: 700;
   }
-  .puzzles_subtitle {
+  .puzzles_content_subtitle {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    line-height: 22px; /* 157.143% */
+    line-height: 22px;
+    width: 343px;
   }
   .footer {
     border-top: none;

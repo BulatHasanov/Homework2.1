@@ -132,12 +132,13 @@
                 font-style: normal;
                 font-weight: 700;
             }
-        }
-        &_subtitle{
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 22px; /* 157.143% */
+            &_subtitle{
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 22px; 
+                width: 343px;
+            }
         }
     }
     .footer{

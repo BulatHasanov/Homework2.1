@@ -33,3 +33,38 @@ const getmonthNumber = function(n = prompt('Введите номер месяц
         return getmonthNumber();
     }
 }
+
+const rememberWord = function() {
+    let task = alert("Запомните слова в следующем списке");
+    let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    words = words.sort(() => Math.random() - 0.5);
+    alert(words);
+    let firstWord = words[0].toLowerCase();
+    let secndWord = words[words.length - 1].toLowerCase();
+
+    let firstUserAnswer = prompt("Назовите первое слово из списка");
+    let secndUserAnswer = prompt("Назовите второе слово из списка");
+    firstUserAnswer = firstUserAnswer.toLowerCase();
+    secndUserAnswer = secndUserAnswer.toLowerCase();
+
+    if ((firstUserAnswer == firstWord) && (secndUserAnswer == secndWord)) {
+        alert("Оба ответа правильные! Вы молодец!");
+        contin = confirm('Продолжить?');
+        if (contin == true) {
+            rememberWord();
+        }
+    } else if (((firstUserAnswer == firstWord) && (secndUserAnswer != secndWord)) || ((firstUserAnswer != firstWord) && (secndUserAnswer == secndWord))) {
+        alert("Вы были близки к победе!");
+        contin = confirm('Продолжить?');
+        if (contin == true) {
+            rememberWord();
+        };
+    } else {
+        alert("К сожалению, вы ответили неправильно");
+        contin = confirm('Продолжить?');
+        if (contin == true) {
+            rememberWord();
+        }; 
+    }
+
+}
